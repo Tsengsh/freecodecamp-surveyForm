@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What Beverage do you want?</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://use.typekit.net/vjh6uqe.css">
+<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main>
+        <div id="hero">
+            <img id="head-img" src='image/fresh-drink.jpg'>
+            <div id="title-bg">
+                <h1 id='title'>Best Smoothie Check</h1>
+                <p id="description">Tell us the flavor you are thirsty for</p>
+            </div>
+        </div>
+        <div id="survey">
+            <form action='#'id="survey-form"> 
+            <div class='form-grid'>
+                <div class="clmn-left">
+                    <div class="form-item"> 
+                        <label id="name-label" class="form-label" for="name">Name</label>
+                        <input id ="name" class="form-box" type="text" name="name"  placeholder="Tell us your name" required>
+                    </div>
+                    <div class="form-item"> 
+                        <label id="email-label" class="form-label" for="email">Email</label>
+                        <input id ="email" class="form-box" type="email" name="email"  placeholder="Your email here" required>
+                    </div>  
+                    <div class="form-item"> 
+                        <label id="number-label" class="form-label" for="number">Age</label>
+                        <input id ="number" class="form-box" type="number" name="number"  placeholder="ex.18" min="1" max="99">
+                    </div>
+                </div>
+
+                <div class="clmn-right">
+                    <div class="form-item">
+                        <p class="form-label">Your favorite flavor</p>
+                        <select id="dropdown" class="form-box">
+                            <option disabled selected value id="drop-placeholder">Select your favorite flavor</option>
+                            <option value="strawberry"><span style='font-size:100px;'>&#127827;</span>Strawberry</option>
+                            <option value="avocado"><span style='font-size:100px;'>&#129361;</span>Avocado</option>                
+                            <option value="peach"><span style='font-size:100px;'>&#127825;</span>Peach</option>
+                            <option value="pear"><span style='font-size:100px;'>&#127824;</span>Pear</option> 
+                            <option value="cherry"><span style='font-size:100px;'>&#127826;</span>Cherry</option>  
+                            <option value="carrot"><span style='font-size:100px;'>&#129365;</span>Carrot</option>                 
+                            <option value="kiwi"><span style='font-size:100px;'>&#129373;</span>Kiwi</option>
+                            <option value="grape"><span style='font-size:100px;'>&#127815;</span>Grape</option>   
+                            <option value="melon"><span style='font-size:100px;'>&#127816;</span>Melon</option>
+                            <option value="apple"><span style='font-size:100px;'>&#127822;</span>Apple</option>                 
+                            <option value="lemon"><span style='font-size:100px;'>&#127819;</span>Lemon</option>                     
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <p class="form-label">How you get sweetness</p>
+                        <div class='box-radi'>
+                            <div>
+                                <label for="brown-suger"><input id="brown-suger" type="radio" name="sweet-flavor" value="brown-suger"> Brown Suger</label>
+                            </div>
+                            <div>
+                                <label for="honey"><input id="honey" type="radio" name="sweet-flavor" value="honey"> Honey</label> 
+                            </div>
+                            <div>   
+                                <label for="maple-syrup"><input id="maple-syrup" type="radio" name="sweet-flavor" value="maple-syrup"> Maple Syrup</label> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+
+                        <p class="form-label">Favorite extra chrunch</p>
+                        <div class='box-radi'>
+                            <div>
+                                <label for="coconut"><input id="coconut" type="checkbox" name="texture" value="coconut"> Coconut slice</label>
+                            </div>
+                            <div>
+                                <label for="choco"><input id="choco" type="checkbox" name="texture" value="choco"> Choco Chips</label>  
+                            </div>
+                            <div>
+                                <label for="pop-rocks"><input id="pop-rocks" type="checkbox" name="texture" value="pop-rocks"> Pop Rocks</label>  
+                            </div>               
+                        </div>
+                    </div> 
+                </div>
+                <div class="clmn-bottom">
+                    <div class="form-item">
+                        <p class="form-label">Share more thoughts about a perfect smoothie</p>
+                        <textarea id="textarea" rows="5" cols="33">About my favorite smoothie...</textarea>
+                    </div>    
+                    <button type="submit" id="submit" class="submit-btn">Submit</button>             
+                </div>
+            </div> 
+            </from>
+        </div>
+    </main>
+
+</body>
+</html>
